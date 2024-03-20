@@ -20,8 +20,6 @@ class Person {
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (getClass() != obj.getClass())
-            return false;
         Person person = (Person) obj;
         return age == person.age &&
                 Objects.equals(name, person.name);
